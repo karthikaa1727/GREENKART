@@ -1,13 +1,14 @@
 package com.greenkart;
 
+import com.plant.PlantManager;
+
 public class PlantStock {
 
 	/**
 	 * This method is used to display plants
 	 */
 	public static void viewPlant() {
-		PlantCart.init();
-		PlantCart.displayPlants();
+		PlantManager.displayAllPlants();
 		filter();
 	}
 
@@ -15,16 +16,19 @@ public class PlantStock {
 	 * To apply filter by price
 	 */
 	public static void filter() {
-		System.out.println("Filter by price");
-		System.out.println("---------------");
-		System.out.println("0 to 49    ----> press 1");
-		System.out.println("50 to 99   ----> press 2");
-		System.out.println("100 to 149 ----> press 3");
-		System.out.println("150 to 200 ----> press 4");
+		System.out.println("Filter");
+		System.out.println("------");
+		System.out.println("If you want Plant     ----> type plant");
+		System.out.println("If you want Tree      ----> type tree");
+		System.out.println("If you want Fruit     ----> type fruit");
+		System.out.println("If you want Vegetable ----> type Vegetable");
+		System.out.println("If you want Flower    ----> type flower");
 		System.out.println("  ");
-		int press1 = 2;
-		PlantCart.searchPlantsByPrice(press1);
-		int press2 = 3;
-		PlantCart.searchPlantsByPrice(press2);
+		
+		String type="plant";
+		PlantManager.applyfilter(type);
+		
+		Purchase buy=new Purchase();
+		buy.purchaseItems();
 	}
 }

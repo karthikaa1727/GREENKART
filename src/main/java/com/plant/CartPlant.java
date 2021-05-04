@@ -1,7 +1,7 @@
-package com.plants;
+package com.plant;
 
 public class CartPlant {
 	public String name;
-	public int rupee;
+	public double rupee;
 	public int qtyPlant;
 }

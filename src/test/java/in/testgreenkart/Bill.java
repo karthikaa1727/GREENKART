@@ -2,8 +2,8 @@ package in.testgreenkart;
 
 import org.junit.Test;
 
-import com.plants.BillManager;
-import com.plants.CartManager;
+import com.plant.BillManager;
+import com.plant.CartManager;
 
 
 public class Bill {

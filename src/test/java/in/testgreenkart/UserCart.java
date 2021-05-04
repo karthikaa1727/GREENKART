@@ -2,7 +2,7 @@ package in.testgreenkart;
 
 import org.junit.Test;
 
-import com.plants.CartManager;
+import com.plant.CartManager;
 
 public class UserCart {
 

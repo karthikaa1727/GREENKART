@@ -1,6 +1,7 @@
 package com.greenkart;
 
-import com.plants.CartManager;
+import com.plant.CartManager;
+import com.plant.PlantManager;
 
 public class Purchase {
 
@@ -11,7 +12,7 @@ public class Purchase {
 	//public void purchaseItem(String plant, int quantity) {
 	public void purchaseItems() {
 		String plant1 = "Rose";
-		boolean exists = PlantCart.checkPlant(plant1);
+		boolean exists = PlantManager.checkPlant(plant1);
 		if (exists) {
 			int quantity1 = 2;
 			CartManager add = new CartManager();
@@ -33,7 +34,7 @@ public class Purchase {
 		if (choice == 1) {
 			// To buy more than 1 plant
 			String plant2 = "Neem Tree";
-			boolean exists = PlantCart.checkPlant(plant2);
+			boolean exists = PlantManager.checkPlant(plant2);
 			if (exists) {
 				int quantity2 = 5;
 				add.addcart(plant2, quantity2);

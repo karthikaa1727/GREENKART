@@ -1,8 +1,11 @@
 package in.testgreenkart;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
-import com.greenkart.PlantCart;
+import com.plant.PlantManager;
+import com.plant.Plants;
 
 
 public class FilterPlants {
@@ -13,26 +16,48 @@ public class FilterPlants {
 	
 	@Test
 	public void testcase1() {
-		int press = 1;
-		PlantCart.searchPlantsByPrice(press);
+		String type = "plant";
+		ArrayList<Plants>plants=PlantManager.applyfilter(type);
+		for(Plants plant:plants) {
+			System.out.println(plant.plantName + "   Rs." + plant.price);
+		}
 	}
 	
 	@Test
 	public void testcase2() {
-		int press = 2;
-		PlantCart.searchPlantsByPrice(press);
+		String type = "vegetable";
+		ArrayList<Plants>plants=PlantManager.applyfilter(type);
+		for(Plants plant:plants) {
+			System.out.println(plant.plantName + "   Rs." + plant.price);
+		}
 	}
 	
 	@Test
 	public void testcase3() {
-		int press = 3;
-		PlantCart.searchPlantsByPrice(press);
+		String type = "fruit";
+		ArrayList<Plants>plants=PlantManager.applyfilter(type);
+		for(Plants plant:plants) {
+			System.out.println(plant.plantName + "   Rs." + plant.price);
+		}
 	}
 	
 	@Test
 	public void testcase4() {
-		int press = 4;
-		PlantCart.searchPlantsByPrice(press);
+		String type = "tree";
+		ArrayList<Plants>plants=PlantManager.applyfilter(type);
+		for(Plants plant:plants) {
+			System.out.println(plant.plantName + "   Rs." + plant.price);
+		}
 	}
+	
+	@Test
+	public void testcase5() {
+		String type = "flower";
+		ArrayList<Plants>plants=PlantManager.applyfilter(type);
+		for(Plants plant:plants) {
+			System.out.println(plant.plantName + "   Rs." + plant.price);
+		}
+	}
+	
 
 }

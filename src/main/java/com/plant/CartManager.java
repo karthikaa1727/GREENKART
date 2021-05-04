@@ -1,8 +1,6 @@
-package com.plants;
+package com.plant;
 
 import java.util.ArrayList;
-
-import com.greenkart.PlantCart;
 
 public class CartManager {
 	/**
@@ -24,7 +22,12 @@ public class CartManager {
 	public void addcart(String plant, int quantity) {
 		// To add all pants to cart what you going to purchase
 		CartPlant shop = new CartPlant();
-		int amount = PlantCart.plants.get(plant);
+		double amount=0;
+		for (Plants find : PlantContainer.getPlants()) {
+			if(find.plantName.equalsIgnoreCase(plant)) {
+				amount=find.price;
+			}
+		}
 		shop.name = plant;
 		shop.rupee = amount;
 		shop.qtyPlant = quantity;

@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.plants.UserManager;
+import com.plant.UserManager;
 
 
 public class UserAuthendicate {

@@ -1,4 +1,4 @@
-package com.plants;
+package com.plant;
 
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
@@ -38,7 +38,7 @@ public class BillManager {
 		System.out.println("Delivery Date :" + deliveryDate);
 		System.out.println("Total Bill :" + totalBill);
 		if (totalQuantity > 5) {
-			System.out.println("As you order more than one item, you will get 25% discount on your total bill ");
+			System.out.println("As you order more than five item, you will get 25% discount on your total bill ");
 			System.out.println("Your Final Bill amount :" + totalBill * 0.75);
 			System.out.println("THANK YOU");
 		} else {

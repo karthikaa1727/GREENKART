@@ -1,6 +1,6 @@
 package com.greenkart;
 
-import com.plants.UserManager;
+import com.plant.UserManager;
 
 public class User {
 
