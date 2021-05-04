@@ -16,5 +16,5 @@ App for purchasing plants
   Test case included;
 #### Feature 8:Add Cart
   Test case included;
-#### Feature 7:Generate and Display Bill
+#### Feature 9:Generate and Display Bill
   Test case included;
